@@ -7,10 +7,10 @@ const PORT = config.get("PORT") || 3000;
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use("/",require("./routes"));
-app.get("/",(req,res)=>{
-    return res.send("Hello Everyone :)");
-})
+//app.use("/",require("./routes"));
+// app.get("/",(req,res)=>{
+//     return res.send("Hello Everyone :)");
+// })
 
 app.listen(PORT,async (err)=>{
     if(err)
