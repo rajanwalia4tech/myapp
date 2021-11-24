@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}));
 
 //app.use("/",require("./routes"));
 app.get("/",(req,res)=>{
-    return res.send("Hello Everyone :)");
+    return res.send("Hello Everyone, This is my first app:)");
 })
 
 app.listen(PORT,async (err)=>{
