@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}));
 //app.use("/",require("./routes"));
 app.get("/",(req,res)=>{
     console.log("connected");
-    return res.send("Hello Everyone, This is my first app:)");
+    return res.send("Hello Everyone, This is my first app:) How are you all!");
 })
 
 app.listen(PORT,async (err)=>{
